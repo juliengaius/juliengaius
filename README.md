@@ -2,7 +2,7 @@
 
 Electrical & Computer Engineering at the University of Toronto. I started on the board side, soldering and designing PCBs for our Formula SAE car, and moved into digital design because I wanted to understand what's actually happening inside the chips on those boards. These days I mostly write and verify RTL for FPGAs.
 
-**Looking for:** PEY co-op roles (12–16 months) in FPGA or ASIC design and verification.
+**Looking for:** PEY co-op roles (4–16 months) in FPGA or ASIC design and verification.
 
 **If you only look at one thing:** [Aegis](https://github.com/juliengaius/aegis), an FPGA market-data pipeline with 2-cycle latency and a fully automated test suite.
 
