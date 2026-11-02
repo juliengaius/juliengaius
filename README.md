@@ -26,11 +26,17 @@ A SystemVerilog market-data and pre-trade risk pipeline for the AMD Kria KR260.
 - 30 self-checking checks across 5 testbenches, run automatically on every push
 - Design decisions written up as ADRs, e.g. why prices use NASDAQ ITCH's 4-decimal fixed-point format
 
+**4. Processor design: [RV32I RISC-V core](https://github.com/juliengaius/rv32i-de1soc) (Verilog, Intel Cyclone V), in progress**\
+A 32-bit RISC-V processor built from scratch on the DE1-SoC, as a multi-cycle FSM and datapath that will run a small game compiled with GCC, drawing to VGA and reading a PS/2 keyboard.
+- ALU, register file and immediate generator done, each with a self-checking testbench
+- Tests aimed at the usual failure points: signed vs. unsigned compares, arithmetic shifts, writes to x0, and the scrambled branch and jump immediate fields
+- Next: decoder, control FSM, then memory-mapped VGA and keyboard
+
 ---
 
 ### Tools
 
-**RTL & FPGA:** SystemVerilog, Verilog, Vivado/Vitis, XSim, ModelSim, Icarus Verilog, AMD Kria KR260, Intel Cyclone V\
+**RTL & FPGA:** SystemVerilog, Verilog, Vivado/Vitis, XSim, Quartus Prime, ModelSim, Icarus Verilog, AMD Kria KR260, Intel Cyclone V\
 **Board-level:** Altium, power regulation, CAN, I2C, bench validation\
 **Verification:** self-checking testbenches, bit-exact C reference models, CI with GitHub Actions\
 **Software:** C/C++, Python, MATLAB, Linux
